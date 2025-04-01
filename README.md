@@ -39,6 +39,8 @@ The config is a `.json` file that looks like this:
 
 Each section lets you customize how the system behaves, including motion detection, tracking, movement classification, door alerts, and heatmap generation.
 
+Door alerts are done with Pushover. For notifications to work, you must modify the `notifications.py` file with your own Pushover API credentials and have the app installed on your device.
+
 ## Modes
 
 - **Full Mode**: Detects and classifies human movement using YOLO and a tracker. It captures snapshots, builds motion videos, sends door alerts, and generates heatmaps.
